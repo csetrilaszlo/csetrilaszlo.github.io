@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="index.js" type="text/javascript"></script>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Saira:wght@200&display=swap" rel="stylesheet">
+	<h1>Calculator</h1>
+</head>
+<body>
+
+	<table class=buttons>
+      <tr>
+          <td colspan = '4'><input name="input" id="input" type="text" disabled></td>
+      </tr>
+    <tr>
+        <td><button  id="ac" type="reset" value="Reset" onclick = ac1();> AC </button>
+         <td><button onclick = app(buttonDiv.value); id= 'buttonDiv'  value="/" type="button"> / </button>
+         <td><button onclick = app(buttonMultiply.value); id='buttonMultiply' value="*" onclick = function app();   type="button"> X </button>
+         <td><button onclick = app(buttonMinus.value); id= 'buttonMinus'type="button"  value="-"> - </button>
+     </tr>
+     <tr>
+        <td><button  onclick = app(button7.value); id='button7' value="7" type="button"> 7 </button>
+        <td><button  onclick = app(button8.value); id='button8'  value="8" type="button"> 8 </button>
+        <td><button  onclick = app(button9.value); id='button9'  value="9" type="button"> 9 </button>
+        <td rowspan="2"><button onclick = app(buttonPlus.value); id='buttonPlus'  value="+" type="button"> + </button>
+        
+     </tr>
+     <tr>
+        <td><button onclick = app(button4.value); id='button4'  value="4" type="button"> 4 </button>
+        <td><button onclick = app(button5.value); id='button5'  value="5" type="button"> 5 </button>
+        <td><button onclick = app(button6.value); id='button6'  value="6" type="button"> 6 </button>
+        
+     </tr>
+     <tr>
+        <td><button onclick = app(button1.value); id='button1'  value="1" type="button"> 1 </button>
+        <td><button onclick = app(button2.value); id='button2'  value="2" type="button"> 2 </button>
+        <td><button onclick = app(button3.value); id='button3'  value="3" type="button"> 3 </button>
+        <td rowspan="2"><button onclick = 'input.value = eval(input.value)'; id='buttonEgal'  value="=" type="button"> = </button>
+        
+        
+     </tr>
+     <tr class="also">
+        <td colspan="2"><button onclick = app(button0.value); id='button0' value="0" type="button"> 0 </button>
+        <td><button onclick = app(buttonSemi.value); id = 'buttonSemi'  value="," type="button"> , </button>
+        
+     </tr>
+
+</table>
+
+</body>
+</html>
